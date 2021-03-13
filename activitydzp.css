@@ -1,0 +1,331 @@
+#appbox{
+	width: 7.2rem;
+	overflow: hidden;
+	/*background: url('dzpdocbg.png') center top no-repeat;*/
+	background: url('images/dzpdoc_bg.png') center top no-repeat;
+	background-size: 100% auto;
+
+	margin:0 auto;
+}
+
+/*大转盘样式开始*/
+#dzp_box{
+	width: 6.46rem;
+	height: 6.46rem;
+	/*margin: 2.16rem auto 0.96rem;*/
+	margin: 0.5rem auto 0.96rem;
+	/*background-color: rgb(0,0,0,0.6);*/
+	position: relative;
+}
+.dzp_bgpic{
+	width: 100%;
+	height: 100%;
+}
+.dzp_zhizhen{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	left: 0;
+	top: 0;
+
+	
+	transform-origin:;
+}
+.styletransition{
+	transition: all 6s;
+}
+.dzp_zhizhen.rotate1{
+	transform:rotate(-307deg);
+	-ms-transform:rotate(-307deg); 	/* IE 9 */
+	-moz-transform:rotate(-307deg); 	/* Firefox */
+	-webkit-transform:rotate(-307deg); /* Safari 和 Chrome */
+	-o-transform:rotate(-307deg); 	/* Opera */
+}
+.dzp_bgpic>img{
+	width: 100%;
+	height: 100%;
+}
+.dzp_zhizhen>img{
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%,-96.5%);
+	/*width: 0.2rem;*/
+	/*height: 1rem;*/
+	width: 0.32rem;
+	padding-bottom: 0.92rem;
+}
+.dzp_clickfunblock{
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%,-50%);
+	width: 1.83rem;
+	height: 1.83rem;
+	border-radius: 50%;
+	overflow: hidden;
+}
+/*大转盘样式结束*/
+
+/*top样式*/
+#top{
+	/*padding: 0.2rem 0;*/
+	position: relative;
+}
+
+#top>p{
+	font-size: 0.35rem;
+	line-height: 1em;
+	color: #fff;
+	text-align: center;
+	margin-bottom: 1.2rem;
+	padding-top: 0.3rem;
+}
+#top>img{
+	display: block;
+	width: 90%;
+	height: auto;
+	margin: 0 auto;
+}
+.toptext{
+	padding: 0.1rem 5%;
+	font-size: 0.15rem;
+	text-align: center;
+}
+#downloadbtn{
+	display: block;
+	width: 2.2rem;
+	background-color: rgba(0,105,255,0.6);
+	color: #fff;
+	line-height: 0.85rem;
+	border-radius: 0.1rem;
+	font-size: 0.15rem;
+	text-align: center;
+	margin: 0 auto;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	transform: translate(-50%,50%);
+}
+/*top样式结束*/
+
+/*大装盘其他样式*/
+.lasttimes_allearn{
+	color: #fed077;
+    font-size: 0.25rem;
+    line-height: 0.46rem;
+    margin-bottom: 0.17rem;
+}
+.lasttimes,.allearn{
+	display: block;
+	text-align: center;
+	font-weight: bold;
+}
+
+.iptonlyshow{
+	display: inline;
+	width:1.2rem;
+	color: #fed077;
+	font-size: 0.25rem;
+	line-height: 0.46rem;
+	background-color: transparent;
+	border:none;
+	text-align: center;
+	/*text-decoration: underline;*/
+}
+/*大装盘其他样式结束*/
+
+/*bottom样式*/
+#bottom{
+	padding: 0 0.5rem 1.53rem;
+}
+.yellowborder{
+	border: 0.03rem dashed #fcff00;
+	border-radius: 0.1rem;
+	background-color: rgba(255,255,255,0.29);
+}
+.yellowlinks{
+	position: relative;
+	margin-bottom: 0.5rem;
+}
+.yellowlinks::before{
+	content: '';
+	width: 0;
+	height: 0.85rem;
+	border-left: 0.03rem dashed  #fcff00;
+	position: absolute;
+	left: 0.34rem;
+	bottom: -0.67rem;
+}
+.yellowlinks::after{
+	content: '';
+	width: 0;
+	height: 0.85rem;
+	border-left: 0.03rem dashed  #fcff00;
+	position: absolute;
+	right: 0.34rem;
+	bottom: -0.67rem;
+}
+.content>.picbox{
+	height: 1.14rem;
+	text-align: center;
+}
+.picbox>img{
+	display: block;
+	height: 0.41rem;
+	width: auto;
+	padding-top: 0.365rem;
+	margin: 0 auto;
+	opacity: 1;
+	filter: alpha(opacity=100);
+}
+.content{
+	/*font-size: 0.16rem;*/
+	/*margin-bottom: 0.2rem;*/
+	/*line-height: 0.23rem;*/
+}
+.contentlis{
+	/*padding: 0.39rem 0.29rem 0.39rem 0.36rem;*/
+	padding: 0.39rem 0.29rem 0.39rem 0.6rem;
+	font-size: 0.24rem;
+	line-height: 1.5em;
+	color: #fcff00;
+}
+.contentlis>li{
+	font-size: 0.24rem;
+	line-height: 1.5em;
+}
+ul.contentlis{
+	list-style: decimal;
+	list-style-position: outside;
+	
+}
+
+#bottom>.caution{
+	font-size: 0.24rem;
+	line-height: 1.5em;
+	padding: 0.58rem 0.5rem 0.53rem;
+	margin-bottom: 0.94rem;
+}
+#telbtn{
+	font-size: 0.24rem;
+	color: #fcff00;
+	display: block;
+	margin: 0 auto;
+	width: 3.64rem;
+}
+
+/*浏览器中输入手机号部分的样式*/
+.phonecheckbox{
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	width: 6.64rem;
+	height: 3.55rem;
+	padding: 1.06rem 0 0;
+	/*background-color: rgba(0,0,0,0.65);*/
+	background: url("images/phonemsgbg.png") rgba(255,255,255,0.15) center center no-repeat;
+	background-size: auto 4.61rem;
+	/*border-radius: 0.1rem;*/
+	transform: translate(-50%,-50%);
+}
+.phonebordeript{
+	width:4.1rem;
+	height:0.72rem;
+	background: url("images/phonemsgradiusbg.png") center center no-repeat;
+	background-size: 100% 100%;
+	border:none;
+	outline:none;
+	color: #d98203;
+	font-size: 0.26rem;
+	line-height:0.72rem;
+	padding:0 0.23rem;
+	margin:0 auto 0.2rem;
+	display: block;
+}
+.getphonemsgbtn{
+	position: absolute;
+	right:1.21rem;
+	top: 2.156rem;
+	color: #fff38a;
+	font-size: 0.26rem;
+	line-height:1em;
+	width: 1.9rem;
+	text-align: center;
+	background-color: transparent;
+	border: none;
+	outline: none;
+}
+.phonemsgconfirmbtn{
+	width: 1.64rem;
+	height: 0.72rem;
+	background: url("images/phonemsgbtn.png") center center no-repeat;
+	background-size: 100% 100%;
+	margin:0.31rem auto;
+	line-height: 0.72rem;
+	font-size: 0.26rem;
+	color: #bd1206;
+	display: block;
+	text-align: center;
+}
+/*浏览器中输入手机号部分的样式结束*/
+
+
+/*自定义layer样式*/
+.layer-tips{
+	/*height: 4.46rem;*/
+	height: 2.76rem;
+	background: url('images/tipsbg.png') center center no-repeat;
+	background-size: auto 4.46rem;
+	padding: 0.92rem 0 0.78rem;
+	text-align: center;
+	color: #fcff00;
+}
+.layer-tips .layertitle{
+	font-size: 0.47rem;
+	color: #f1eb3c;
+	margin-bottom: 0.37rem;
+}
+.layer-tips .layerp1{
+	font-size: 0.3rem;
+	line-height: 1em;
+	max-width: 5.6rem;
+	margin: 0 auto 0.32rem;
+}
+.layer-tips .layerp2{
+	font-size: 0.25rem;
+	margin-bottom: 0.41rem;
+	line-height: 1em;
+}
+.layer-tips p span{
+	color: #fff;
+	font-size: 0.3rem;
+}
+.layer-tips .layerappdownload{
+	display: block;
+	width: 4.85rem;
+	height: 0.64rem;
+	line-height: 0.64rem;
+	border-radius: 0.32rem;
+	overflow: hidden;
+	background: url('images/btnradius.png') no-repeat;
+	background-size: 100% 0.64rem;
+	margin: 0.41rem auto 0;
+	font-size: 0.21rem;
+	color: #bd1206;
+}
+.layer-tips .layerclosebtn{
+	position: absolute;
+	right: 0.05rem;
+    top: 0.07rem;
+	/*background-color: #000;*/
+	width: 0.74rem;
+	height: 0.74rem;
+	border-radius: 0.37rem;
+	overflow: hidden;
+}
+
+.layer-tips-box{
+	background-color: transparent;
+}
+/*自定义layer样式结束*/

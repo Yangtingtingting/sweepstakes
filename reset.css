@@ -1,0 +1,150 @@
+@charset "utf-8";
+/*=========================Reset_start==========================*/
+body,h1,h2,h3,h4,h5,h6,div,p,dl,dt,dd,ol,ul,li,form,table,th,td,a,img,span,strong,var,em,input,textarea,select,option{margin: 0; padding: 0;}
+html,body{font-family:"微软雅黑","黑体",Arail,"宋体",Tabhoma; font-size: 12px; text-align: left;}
+ul,ol{list-style: none;}
+img{border: 0;}
+input,select,textarea{outline:0;}
+textarea{resize:none;}
+table{border-collapse: collapse; border-spacing: 0;}
+th,strong,var,em{font-weight: normal; font-style: normal;}
+a{text-decoration: none;}
+/*a:link,a:visited,a:hover,a:active{text-decoration:none;} */
+/*==========================Reset_End===========================*/
+
+/*利用after伪类清除浮动*/
+.clearfloat{
+    zoom: 1;
+}
+.clearfloat:after{
+    content: '';
+    display: block;
+    clear: both;
+    height:0;
+    visibility:hidden;
+}
+/*添加一个 类名为clearit的div来清除浮动*/
+.clearit{
+    clear: both;
+    height:0;
+    overflow: hidden;
+    font-size: 0;
+}
+/*添加类名设置超出后不换行，用省略号代替*/
+._textover{
+    text-overflow: ellipsis;
+    white-space:nowrap;
+    display: block;
+    overflow: hidden;
+}
+/*苹果端获取焦点时高亮问题*/
+input, textarea, a {
+    -webkit-tap-highlight-color: transparent;
+}
+
+/*scroll流畅*/
+div{
+    -webkit-overflow-scrolling: touch;
+}
+
+
+
+
+*{
+    font-size: 12px;
+}
+html,body{
+    font-size: 100px;
+}
+img{
+    display: block;
+    padding:0;
+    margin:0;
+}
+.text-center{
+    text-align: center;
+}
+.text-left{
+    text-align: left;
+}
+.text-right{
+    text-align: right;
+}
+.floatleft{
+    float: left;
+}
+.floatright{
+    float: right;
+}
+.height100{
+    height:100%;
+}
+.height50{
+    height:50%;
+}
+.width50{
+    width:50%;
+}
+.bg-white255{
+    background-color: #fff;
+}
+.bg-black000{
+    background-color: #000;
+}
+.font12{
+    font-size: 12px;
+}
+.font13{
+    font-size: 13px;
+}
+.font14{
+    font-size: 14px;
+}
+.font15{
+    font-size: 15px;
+}
+.font16{
+    font-size: 16px;
+}
+.font17{
+    font-size: 17px;
+}
+.font18{
+    font-size: 18px;
+}
+.font19{
+    font-size: 19px;
+}
+.font20{
+    font-size: 20px;
+}
+.font21{
+    font-size: 21px;
+}
+.font22{
+    font-size: 22px;
+}
+.font23{
+    font-size: 23px;
+}
+.font24{
+    font-size: 24px;
+}
+.font25{
+    font-size: 25px;
+}
+.font30{
+    font-size: 30px;
+}
+.font35{
+    font-size: 35px;
+}
+.marginauto{
+    margin:0 auto;
+}
+
+/*自定义input默认显示时的样式*/
+input.zidingyiinput::-webkit-input-placeholder{
+    color: rgb(91,91,91);
+    font-size: 12px;
+}
